@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=""viewport" content=""width=device-width, initial-scale="1.0">
+    <title>can i bite you</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        img {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .message {
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        #yesBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        
+        #noBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.postimg.cc/x1KMQmGN/IMG-6324.jpg" alt="Can I Bite You?">
+    
+    <div class="buttons">
+        <button id="yesBtn" onclick="handleYes()">yes</button>
+        <button id="noBtn" onclick="handleNo()">no</button>
+    </div>
+
+    <div class="message" id="message"></div>
+
+    <script>
+        let yesButtonSize = 16; 
+
+        function handleYes() {
+            document.getElementById("message").innerText = "....💍👍";
+        }
+
+        function handleNo() {
+            yesButtonSize += 5; 
+            document.getElementById("yesBtn").style.fontSize = yesButtonSize + "px";
+            document.getElementById("message").innerText = "so you hate me";
+        }
+    </script>
+</body>
+    
+</html>
